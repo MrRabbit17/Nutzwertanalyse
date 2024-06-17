@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 import altair as alt
-import subprocess
-
 
 # Lade die CSS-Datei
 def load_css(file_name):
@@ -14,15 +12,15 @@ def load_css(file_name):
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     else:
         st.error(
-            f"CSS-Datei '{file_name}' nicht gefunden. Bitte stellen Sie sicher, dass die Datei im gleichen Verzeichnis wie das Skript vorhanden ist.")
-
+            f"CSS-Datei '{file_name}' nicht gefunden. Bitte stellen Sie sicher, dass die Datei im gleichen Verzeichnis wie das Skript vorhanden ist."
+        )
 
 load_css("style.css")
 
 # Definieren Sie die möglichen Standortfaktoren
-faktoren = ["Lage", "Verkehranbindung", "Infrastruktur", " Steuern", "Umweltbestimmungen", " Subventionen",
-            "Ressourcenverfügbarkeit", " Absatzmöglichkeiten", "Bildungs- und Qualifikationsniveau",
-            "Öffentliche Infrastruktur", " Angebote im Bereich Freizeit und Kultur", "Konkurrenz",
+faktoren = ["Lage", "Verkehrsanbindung", "Infrastruktur", "Steuern", "Umweltbestimmungen", "Subventionen",
+            "Ressourcenverfügbarkeit", "Absatzmöglichkeiten", "Bildungs- und Qualifikationsniveau",
+            "Öffentliche Infrastruktur", "Angebote im Bereich Freizeit und Kultur", "Konkurrenz",
             "Kooperationspartner"]
 
 # Initialisieren Sie eine Session State-Variable für die neuen Faktoren

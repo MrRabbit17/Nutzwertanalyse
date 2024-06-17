@@ -13,8 +13,8 @@ h1, h2, h3 {
 /* Sidebar */
 .stSidebar {
     background-color: #ffffff;
-    padding: 20;
-    border-right: 1 solid #ddd;
+    padding: 20px;
+    border-right: 1px solid #ddd;
 }
 
 /* Buttons */
@@ -22,8 +22,8 @@ h1, h2, h3 {
     background-color: #6B8E23;
     color: white;
     border: none;
-    padding: 10 20;
-    border-radius: 5;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 .stButton button:hover {
@@ -33,33 +33,33 @@ h1, h2, h3 {
 
 /* Inputs */
 .stTextInput input, .stNumberInput input {
-    padding: 10;
-    border-radius: 5;
-    border: 1 solid #ddd;
-    width: 100;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
     box-sizing: border-box;
 }
 
 /* Expander */
 .stExpander {
     background-color: #f8f9fa;
-    padding: 15;
-    border: 1 solid #ddd;
-    border-radius: 5;
-    margin-bottom: 10;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* Data Frame */
 .stDataFrame {
-    margin-top: 20;
+    margin-top: 20px;
 }
 .stDataFrame table {
-    width: 100;
+    width: 100%;
     border-collapse: collapse;
 }
 .stDataFrame table th, .stDataFrame table td {
-    border: 1 solid #ddd;
-    padding: 10;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
 }
 .stDataFrame table th {
@@ -75,51 +75,51 @@ h1, h2, h3 {
 
 /* Slider Styles */
 .stSlider > div > div {
-    background: #ddd ;
-    border-radius: 5;
+    background: #ddd !important;
+    border-radius: 5px !important;
 }
 .stSlider > div > div > div {
-    background-color: #6B8E23 ;
-    height: 10;
-    border-radius: 5;
+    background-color: #6B8E23 !important;
+    height: 10px !important;
+    border-radius: 5px !important;
 }
 .stSlider > div > div > div > div {
-    background-color: #6B8E23;
-    width: 20;
-    height: 20;
-    border-radius: 50;
-    border: 2 solid white ;
-    top: -5;
+    background-color: #6B8E23 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    border: 2px solid white !important;
+    top: -5px !important;
 }
 
 /* Remove Gradient */
 .stSlider > div > div > div[role="slider"]::-webkit-slider-runnable-track {
-    background-color: #6B8E23;
+    background-color: #6B8E23 !important;
 }
 .stSlider > div > div > div[role="slider"]::-moz-range-track {
-    background-color: #6B8E23;
+    background-color: #6B8E23 !important;
 }
 .stSlider > div > div > div[role="slider"]::-ms-track {
-    background-color: #6B8E23;
-    border-color: transparent;
-    color: transparent;
+    background-color: #6B8E23 !important;
+    border-color: transparent !important;
+    color: transparent !important;
 }
 
 /* Set Slider Thumb Color to Green */
 .stSlider > div > div > div > div {
-    background-color: #6B8E23 ;
-    width: 20;
-    height: 20;
-    border-radius: 50;
-    border: 2 solid white ;
-    top: -5;
+    background-color: #6B8E23 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    border: 2px solid white !important;
+    top: -5px !important;
 }
 .stSlider > div > div > div[role="slider"]::-webkit-slider-thumb {
-    background-color: #6B8E23 ;
+    background-color: #6B8E23 !important;
 }
 .stSlider > div > div > div[role="slider"]::-moz-range-thumb {
-    background-color: #6B8E23 ;
+    background-color: #6B8E23 !important;
 }
 .stSlider > div > div > div[role="slider"]::-ms-thumb {
-    background-color: #6B8E23;
+    background-color: #6B8E23 !important;
 }
