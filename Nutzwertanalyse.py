@@ -2,12 +2,11 @@ import streamlit as st
 import pandas as pd
 import os
 import altair as alt
-import subprocess
 
 # Definieren Sie die möglichen Standortfaktoren
-faktoren = ["Lage", "Verkehranbindung", "Infrastruktur", " Steuern", "Umweltbestimmungen", " Subventionen",
-            "Ressourcenverfügbarkeit", " Absatzmöglichkeiten", "Bildungs- und Qualifikationsniveau",
-            "Öffentliche Infrastruktur", " Angebote im Bereich Freizeit und Kultur", "Konkurrenz",
+faktoren = ["Lage", "Verkehrsanbindung", "Infrastruktur", "Steuern", "Umweltbestimmungen", "Subventionen",
+            "Ressourcenverfügbarkeit", "Absatzmöglichkeiten", "Bildungs- und Qualifikationsniveau",
+            "Öffentliche Infrastruktur", "Angebote im Bereich Freizeit und Kultur", "Konkurrenz",
             "Kooperationspartner"]
 
 # Initialisieren Sie eine Session State-Variable für die neuen Faktoren
