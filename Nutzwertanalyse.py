@@ -4,20 +4,6 @@ import os
 import altair as alt
 
 
-# Lade die CSS-Datei
-def load_css(file_name):
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(current_dir, file_name)
-    if os.path.exists(file_path):
-        with open(file_path) as f:
-            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    else:
-        st.error(
-            f"CSS-Datei '{file_name}' nicht gefunden. Bitte stellen Sie sicher, dass die Datei im gleichen Verzeichnis wie das Skript vorhanden ist.")
-
-
-load_css("style.css")
-
 # Definieren Sie die möglichen Standortfaktoren
 faktoren = ["Lage", "Verkehrsanbindung", "Infrastruktur", "Steuern", "Umweltbestimmungen", "Subventionen",
             "Ressourcenverfügbarkeit", "Absatzmöglichkeiten", "Bildungs- und Qualifikationsniveau",
@@ -72,7 +58,7 @@ if st.button("Nutzwertanalyse durchführen"):
     st.dataframe(ergebnisse_df)
 
     # Bar chart with custom color
-    chart = alt.Chart(ergebnisse_df).mark_bar(color='#6B8E23').encode(
+    chart = alt.Chart(ergebnisse_df).mark_bar(color='#8B0000').encode(
         x='Standort:O',
         y='Nutzwert:Q'
     ).properties(
