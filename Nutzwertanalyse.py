@@ -48,7 +48,7 @@ for i in range(num_standorte):
         faktorenwerte = {}
         for faktor in st.session_state.alle_faktoren:
             cols = st.columns([4, 1])
-            faktorenwerte[faktor] = cols[0].number_input(f"Wert für {faktor} in {standort_name}", 0, 10, 5)
+            faktorenwerte[faktor] = cols[0].number_input(f"Nutzwert für {faktor} in {standort_name}", 0, 10, 5)
             cols[1].markdown("<br>", unsafe_allow_html=True)
             if cols[1].button("Löschen", key=f"delete_{faktor}_{i}"):
                 delete_faktor(faktor)
